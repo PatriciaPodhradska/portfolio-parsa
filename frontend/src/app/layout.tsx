@@ -15,8 +15,8 @@ const DMSans = DM_Sans({
 });
 
 export const metadata = {
-  title: 'My Portfolio',
-  description: 'Built with Next.js',
+  title: 'Patricia Parsa | Portfolio',
+  description: 'Ik ben Patricia, front-end developer.',
 };
 
 export default function RootLayout({

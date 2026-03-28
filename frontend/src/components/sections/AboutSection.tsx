@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Code2, Rocket, Users, Award } from 'lucide-react';
+import { Code2, Rocket, Users, Award, Sparkles } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export function AboutSection() {
@@ -80,9 +80,6 @@ export function AboutSection() {
                 <p className="text-zinc-700 leading-relaxed whitespace-pre-line">
                   {t('about.description')}
                 </p>
-                <p className="text-zinc-700 leading-relaxed">
-                  {t('about.description2')}
-                </p>
               </div>
 
               {/* Highlights Grid */}
@@ -118,14 +115,12 @@ export function AboutSection() {
                 {/* Technology Bars */}
                 <div className="space-y-4">
                   {[
-                    { name: 'HTML & CSS', level: 95 },
-                    { name: 'JavaScript', level: 95 },
                     { name: 'React / Next.js', level: 95 },
                     { name: 'TypeScript', level: 90 },
+                    { name: 'JavaScript', level: 95 },
                     { name: 'TailwindCSS', level: 95 },
-                    { name: 'Java', level: 50 },
+                    { name: 'HTML & CSS', level: 95 },
                     { name: 'Python', level: 40 },
-                    { name: 'PostgreSQL', level: 30 },
                   ].map((skill, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-2">
@@ -176,6 +171,17 @@ export function AboutSection() {
                   </li>
                 </ul>
               </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6 }}
+                className="bg-gradient-to-br from-zinc-200 to-zinc-50 p-8 rounded-2xl text-chart-4"
+              >
+                <h3 className="text-sm font-extrabold flex gap-1"><Sparkles className='h-4 w-4'/> {t('about.interests')} <span className="font-semibold">{t('about.interests.description')}</span></h3>
+              </motion.div>
+
             </motion.div>
           </div>
         </motion.div>

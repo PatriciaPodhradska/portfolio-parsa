@@ -52,6 +52,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <div className="space-y-4">
               {/* Typewriter Effect */}
                 <motion.h2
+                key={title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}

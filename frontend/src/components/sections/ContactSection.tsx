@@ -12,12 +12,31 @@ export function ContactSection() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     // Handle form submission
-    console.log('Formulier verzonden:', formData);
-    alert('Bedankt voor uw bericht! Ik neem zo snel mogelijk contact met u op.');
-    setFormData({ name: '', email: '', message: '' });
+  const formDataMetKey = {
+    ...formData,
+    access_key: "a95342dd-6e12-406a-b668-7ca5fb234481"
+  };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(formDataMetKey),
+  });
+
+  const result = await response.json();
+  if (result.success) {
+    alert("Bericht verzonden!");
+    // Formulier leegmaken
+    setFormData({ name: "", email: "", message: "" });
+  } else {
+    alert("Er ging iets mis.");
+  }
   };
 
   const contactInfo = [
@@ -193,7 +212,6 @@ export function ContactSection() {
                     className="w-full px-4 py-3 border border-zinc-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:border-transparent transition-all"
                     placeholder="Uw naam"
                     required
-                    disabled
                   />
                 </div>
 
@@ -210,7 +228,6 @@ export function ContactSection() {
                     className="w-full px-4 py-3 border border-zinc-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:border-transparent transition-all"
                     placeholder="daan.bakker@voorbeeld.com"
                     required
-                    disabled
                   />
                 </div>
 
@@ -227,7 +244,6 @@ export function ContactSection() {
                     className="w-full px-4 py-3 border border-zinc-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:border-transparent transition-all resize-none"
                     placeholder="Beste Patricia..."
                     required
-                    disabled
                   />
                 </div>
 
