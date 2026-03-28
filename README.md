@@ -1,4 +1,4 @@
-# portfolio_parsa
+# Portfolio van Patricia Podhradska
 (NL)
 Dit is de vernieuwde versie van mijn eerdere project, 'ParsaDesigns'. Waar de vorige versie de basis legde, tilt deze update mijn digitale visitekaartje naar een hoger niveau.
 
