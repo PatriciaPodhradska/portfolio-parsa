@@ -57,17 +57,22 @@ const translations = {
     'projects.viewLive': 'Live Demo',
     
     // Project 1
-    'project1.title': 'Website voor het reisbureau Bon Travel (frontend).',
-    'project1.description': 'Voor het reisbureau Bon travel heb ik een website gemaakt. \n Bij de front-end maak ik gebruik van TailwindCSS, HTML en Javascript. Herhalende HTML block elements zoals header of footer heb ik gesplitst in meerdere JS bestanden om ervan componenten te kunnen maken, zodat ik elke keer alleen gebruik maak van afkorting. Op de website zijn er kleine Javascript onderdelen zoals logo slider of cookie bar. \n De back end wordt gemaakt met Node.js en MySQL database. Dit is nu steeds work in progress. \n Hierbij heb ik veel nieuws geleerd (net als over reisbureaus en reizen) en het was plezier voor mij om deze website te kunnen ontwerpen. \n Zie het hele project op mijn Github profiel.',
+    'project1.title': 'Mijn nieuwste portfolio website',
+    'project1.description': 'Om mijn portfolio-website up-to-date te houden, heb ik deze geüpdatete versie van mijn portfolio-website aangemaakt.\n\n Ik maakte gebruik van de technologieën Next.js, TailwindCSS en de Bun package manager. Het ontwerp maakte ik zelf met behulp van Figma en Figma Make. De one-page-websitestructuur is standaard opgesplitst in de secties navigation, hero, about, projects, skills, contact en footer. De codebase heb ik gedeployd op Vercel, aangezien Next.js en Vercel goed op elkaar aansluiten. Ik zal deze website gebruiken als basis en verzameling van mijn werk en toekomstige projecten.',
     
     // Project 2
-    'project2.title': 'Business portfolio website voor klant',
-    'project2.description': 'Eén van mijn klanten vroeg me of ik een website voor haar zou kunnen aanmaken voor haar business portfolio. Dus ik heb eentje voor haar ontworpen. \n Qua programmeertalen maakte ik vooral gebruik van React en TailwindCSS. \n Routing op de website werd gemaakt met HashRouter (normaal gesproken gaat de routing met BrowserRouter maar dat kan niet op Github Pages). \n Er zijn verschillende onderdelen aanwezig zoals Header, Hero, About of Certificates. \nWebsite is geïmplementeerd op de hosting Github Pages en heeft zijn eigen domeinnaam geregeld via de slowaakse domeinwebsite. Er is ook een formulier dat werkt door gebruik maken van de form backend FormSubmit.\n Zie het hele project op mijn Github profiel.',
-    
+    'project2.title': 'Zakelijke portfolio-website voor een klant',
+    'project2.description': 'Voor een van mijn klanten heb ik een zakelijke portfolio-website ontworpen en ontwikkeld. Voor de technische realisatie heb ik voornamelijk gebruikgemaakt van React en Tailwind CSS. De routing op de website is opgezet met HashRouter. Hoewel BrowserRouter doorgaans de standaard is, heb ik voor HashRouter gekozen om volledige compatibiliteit met GitHub Pages te garanderen. De website is modulair opgebouwd en bevat secties zoals een Header, Hero, About en Certificates. Het project wordt gehost op GitHub Pages en is gekoppeld aan een eigen domeinnaam via een Slowaakse registrar. Daarnaast bevat de site een functioneel contactformulier dat gebruikmaakt van FormSubmit voor de backend-afhandeling. Bekijk het volledige project op mijn GitHub-profiel.',
+
     // Project 3
-    'project3.title': 'Referentie: Mijn oude portfolio website',
-    'project3.description': 'Als referentie voeg ik er bij ook mijn oude portfolio website. \n Die werd gemaakt heel simpel met HTML en CSS.\n Zie het hele project op mijn Github profiel.',
-    
+    'project3.title': 'Website voor reisbureau Bon Travel (frontend)',
+    'project3.description': 'Voor reisbureau Bon Travel heb ik een website ontwikkeld. Voor de frontend maak ik gebruik van Tailwind CSS, HTML en JavaScript. Om herbruikbare componenten te creëren, heb ik herhalende HTML-elementen (zoals de header en footer) ondergebracht in aparte JS-bestanden; hierdoor kan ik ze eenvoudig aanroepen via korte verwijzingen. De website bevat diverse JavaScript-functionaliteiten, zoals een logoslider en een cookiebar. Tijdens dit project heb ik veel nieuwe vaardigheden geleerd — zowel technisch als over de reisbranche — en ik heb met veel plezier aan het ontwerp gewerkt. Bekijk het volledige project op mijn GitHub-profiel.',
+  
+    // Project 4
+    'project4.title': 'Referentie: Mijn oude portfolio website',
+    'project4.description': 'Als referentie voeg ik ook mijn oude portfolio-website toe. Deze is op een heel eenvoudige manier gebouwd met enkel HTML en CSS. Bekijk het volledige project op mijn GitHub-profiel.',
+
+
     // Skills Section
     'skills.title': 'Vaardigheden & services',
     'skills.subtitle': 'Technologieën waarmee ik werk',
@@ -154,17 +159,21 @@ const translations = {
     'projects.viewLive': 'Live Demo',
     
     // Project 1
-    'project1.title': 'Website for travel agency Bon Travel (frontend)',
-    'project1.description': 'I developed a website for the travel agency Bon Travel. \n For the front-end, I utilized TailwindCSS, HTML, and JavaScript. To improve maintainability, I modularized repetitive HTML elements like the header and footer into separate JS components. The site features various JavaScript integrations such as a logo slider and a cookie consent bar. \n The back-end is currently under development using Node.js and a MySQL database. \n This project provided a great learning experience regarding both technical implementation and the travel industry. \n View the full project on my GitHub profile.',
-    
+    'project1.title': 'My latest portfolio website',
+    'project1.description': 'To keep my portfolio website up to date, I created this updated version of my site. I used technologies such as Next.js, TailwindCSS, and the Bun package manager. I designed the layout myself using Figma and Figma Make. The one-page website structure is divided into the standard sections: navigation, hero, about, projects, skills, contact, and footer. I deployed the codebase on Vercel, as Next.js and Vercel integrate seamlessly. I will use this website as a foundation and a collection of my work and future projects.',
+
     // Project 2
-    'project2.title': 'Business portfolio website for client',
-    'project2.description': 'A client requested a professional website for her business portfolio, which I designed and developed from scratch. \n I primarily used React and TailwindCSS for the build. \n Navigation was implemented using HashRouter to ensure compatibility with GitHub Pages. \n The site includes several custom sections such as a Hero, About, and Certificates. It is hosted on GitHub Pages with a custom domain registered via a Slovak provider. I also integrated a functional contact form using FormSubmit. \n View the full project on my GitHub profile.',
-    
+    'project2.title': 'Business portfolio website for a client',
+    'project2.description': "I designed and developed a professional business portfolio website for one of my clients. For the technical implementation, I primarily used React and Tailwind CSS. The website's routing is built with HashRouter. While BrowserRouter is typically the standard, I opted for HashRouter to ensure full compatibility with GitHub Pages. The site follows a modular structure and includes sections such as Header, Hero, About, and Certificates. The project is hosted on GitHub Pages and is linked to a custom domain through a Slovak registrar. Additionally, the site features a functional contact form that utilizes FormSubmit for backend processing. You can view the full project on my GitHub profile.",
+
     // Project 3
-    'project3.title': 'Reference: My previous portfolio website',
-    'project3.description': 'I have included my previous portfolio website as a reference. \n This version was built using a clean and simple approach with standard HTML and CSS. \n View the full project on my GitHub profile.',
+    'project3.title': 'Website for travel agency Bon Travel (frontend)',
+    'project3.description': 'I developed a website for the travel agency Bon Travel. For the frontend, I used Tailwind CSS, HTML, and JavaScript. To create reusable components, I moved repetitive HTML elements (such as the header and footer) into separate JS files; this allows me to easily call them using short references. The website features various JavaScript functionalities, such as a logo slider and a cookie bar. During this project, I gained many new skills—both technical and industry-specific regarding travel agencies—and I thoroughly enjoyed the design process. You can view the full project on my GitHub profile.',
     
+   // Project 4
+    'project4.title': 'Reference: My old portfolio website',
+    'project4.description': 'As a reference, I am also including my old portfolio website. It was built very simply using only HTML and CSS. You can view the full project on my GitHub profile.',
+
     // Skills Section
     'skills.title': 'Skills & Services',
     'skills.subtitle': 'Technologies I work with',

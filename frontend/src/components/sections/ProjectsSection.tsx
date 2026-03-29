@@ -3,8 +3,9 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 import { FaGithub } from "react-icons/fa6";
 import { useLanguage } from '../../context/LanguageContext';
 import BonTravel from '../../assets/project/bontravel.png';
-import Portfolio from '../../assets/project/oldest_portfolio.png';
+import PortfolioOld from '../../assets/project/oldest_portfolio.png';
 import Client from '../../assets/project/website_for_client.png';
+import PortfolioNew from '../../assets/project/portfolio_parsa.png';
 import Image from 'next/image';
 
 export function ProjectsSection() {
@@ -14,23 +15,31 @@ export function ProjectsSection() {
     {
       title: t('project1.title'),
       description: t('project1.description'),
-      image: BonTravel,
-      tags: ['React', 'TailwindCSS', 'Javascript', 'Node.js'],
+      image: PortfolioNew,
+      tags: ['Next.js', 'TailwindCSS', 'Bun'],
       color: 'from-blue-500 to-cyan-500',
-      githubUrl: 'https://github.com/patriciaParsa/Bon_travel'
+      githubUrl: 'https://github.com/PatriciaPodhradska/portfolio-parsa'
     },
     {
       title: t('project2.title'),
       description: t('project2.description'),
       image: Client,
-      tags: ['React', 'TailwindCSS'],
+      tags: ['React', 'TailwindCSS', 'Npm'],
       color: 'from-purple-500 to-pink-500',
       githubUrl: 'https://github.com/VieraPodhradska/portfolio_website'
     },
     {
       title: t('project3.title'),
       description: t('project3.description'),
-      image: Portfolio,
+      image: BonTravel,
+      tags: ['React', 'TailwindCSS', 'Javascript', 'Npm'],
+      color: 'from-orange-500 to-red-500',
+      githubUrl: 'https://github.com/patriciaParsa/Bon_travel'
+    },
+    {
+      title: t('project4.title'),
+      description: t('project4.description'),
+      image: PortfolioOld,
       tags: ['HTML', 'CSS'],
       color: 'from-orange-500 to-red-500',
       githubUrl: 'https://github.com/patriciaParsa/Portfolio_website_updated_dec2023'
